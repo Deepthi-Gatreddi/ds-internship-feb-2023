@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search String</title>
+</head>
+<body>
+    <h1 style="text-align:'center'">Enter a regular expression to search it in the entered string:</h1>
+    <form action="{{ url_for('home_page')}}" method="POST">
+        Enter a String:<input type="text" name="string"><br><br>
+        Enter the regex(regular expression):<input type="text" name="regex"><br><br>
+        <input type="submit" value="find">
+    </form>
+</body>
+</html>
