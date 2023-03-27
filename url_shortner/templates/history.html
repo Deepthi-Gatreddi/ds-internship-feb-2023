@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener - History</title>
+  </head>
+  <body>
+    <h1>URL Shortener - History</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Original URL</th>
+          <th>Shortened URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for url in urls %}
+        <tr>
+          <td><a href="{{ url.original_url }}">{{ url.original_url }}</a></td>
+          <td><a href="{{ url.short_url }}">{{ url.short_url }}</a></td>
+          <td><a href="{{ url.full_url }}">{{ url.full_url }}</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    background:rgb(139, 139, 248);
+    text-align: center;
+}
+h1{
+    margin-top:10px;
+}
+button{
+    background-color: rgb(21, 204, 104);
+    border:2px solid black;
+    border-radius:60px;
+    width:150px;
+    height:50px;
+    background-color: black;
+    color:white;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+div{
+    margin-top:200px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+
+}
+input{
+   width:500px;
+   height:50px;
+   border:3px solid black;
+}
